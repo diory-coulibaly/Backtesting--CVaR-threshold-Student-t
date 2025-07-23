@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: var_analysis_advanced_all_updated
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run var_analysis_advanced_all_updated.py --server.port 8080 --server.enableCORS false
